@@ -7,7 +7,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  Serial.println("SST Technologies!");
+  Serial.println("Welcome to");
   Serial.println("CMR Institute of Technology!");
   delay(1000);
 }
