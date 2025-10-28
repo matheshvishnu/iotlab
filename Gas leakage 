@@ -1,1 +1,17 @@
-void setup(){
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(34, INPUT);
+  pinMode(14, OUTPUT);
+}
+
+void loop()
+{
+  int val;
+  val = analogRead(34);
+  Serial.println(val);
+  if (val > 3050)
+    digitalWrite(14, HIGH);
+  else
+    digitalWrite(14, LOW);
+}
